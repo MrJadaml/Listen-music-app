@@ -17,7 +17,7 @@
       {{#tracks}}
         <div class="ui segment">
           <i data-id={{id}} data-title="{{title}}" class="fa fa-play">{{title}} by {{artist}}</i>
-          <audio id={{id}} src={{file}}></audio>
+          <audio id={{id}} src={{file}} preload="none"></audio>
         </div>
       {{/tracks}}
     </script>
