@@ -1,0 +1,6 @@
+{
+  "name": "listen-jadam",
+  "root": "./",
+  "clean_urls": true,
+  "error_page": "error.html"
+}

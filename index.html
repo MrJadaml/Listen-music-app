@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Listen</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class='song-select'>
+      <h1>Select a Song!</h1>
+    </header>
+    <section class='songs-queue'>
+
+    </section>
+
+    <script type="text/template" class="tmpl">
+      {{#tracks}}
+        <div class="ui segment">
+          <i data-id={{id}} data-title="{{title}}" class="fa fa-play">{{title}} by {{artist}}</i>
+          <audio id={{id}} src={{file}}></audio>
+        </div>
+      {{/tracks}}
+    </script>
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/mustache/mustache.js" type="text/javascript" charset="utf-8"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
